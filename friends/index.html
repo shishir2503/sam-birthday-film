@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#121a15">
+<title>Birthday rewind for Samasmita</title>
+<link rel="stylesheet" href="film.css">
+<script src="film.js" defer></script>
+</head>
+<body>
+<header><a href="./" aria-label="Birthday rewind home">Birthday rewind</a><button id="sound" type="button" aria-pressed="false">♪ Sound off</button></header>
+<main id="film">
+<section id="cover" class="cover">
+  <img src="photos/01.jpg" alt="Shishir and Samasmita sitting by a blue railing at sunset" fetchpriority="high">
+  <div class="intro">
+    <p class="eyebrow">25 NOVEMBER 2026</p>
+    <h1 tabindex="-1">Happy birthday,<br><em>Samasmita!</em></h1>
+    <p>A little rewind of stadium noise, rainy roads, festive nights, and the photos that still make me laugh.</p>
+    <button class="primary" id="start">Play the memories <span aria-hidden="true">▶</span></button>
+  </div>
+</section>
+<section id="chapter" class="chapter" hidden aria-labelledby="chapter-title">
+  <div class="chapter-copy">
+    <p class="eyebrow" id="chapter-label"></p>
+    <h2 id="chapter-title" tabindex="-1"></h2>
+    <p id="chapter-note"></p>
+    <button class="primary" id="next">Next memory</button>
+  </div>
+  <div id="frames" class="frames"></div>
+</section>
+<section id="ending" class="ending" hidden aria-labelledby="letter-title">
+  <article>
+    <p class="eyebrow">25 NOVEMBER · HAPPY 23RD</p>
+    <h2 id="letter-title" tabindex="-1">To my friend<br><em>Samasmita</em></h2>
+    <p>Going through these photos made me laugh again: the wildly different selfie angles, the stadium crowd, and that umbrella doing its best. Thanks for being game for the detours and for making ordinary plans worth remembering.</p>
+    <p>I hope 23 brings a few brave decisions you’re proud of, good people around you, and plenty of evenings you wish had lasted a bit longer. Here’s to more match days, questionable photos, and reasons to say, “Send me that one.”</p>
+    <p class="signature">Happy birthday, dost.<br>— Shishir</p>
+    <button class="primary" id="replay">Rewind the film</button>
+  </article>
+</section>
+</main>
+<footer id="nav" hidden><button id="back" type="button">Previous</button><div id="dots" aria-label="Memory chapters" role="group"></div><output id="count" aria-live="polite"></output></footer>
+<div id="flash" aria-hidden="true"></div>
+<dialog id="viewer" aria-labelledby="photo-caption">
+  <button id="close" type="button" aria-label="Close photo">×</button>
+  <button id="prev-photo" class="photo-control" type="button" aria-label="Previous photo">‹</button>
+  <figure><img id="full-photo" alt=""><figcaption id="photo-caption"></figcaption></figure>
+  <button id="next-photo" class="photo-control" type="button" aria-label="Next photo">›</button>
+</dialog>
+</body>
+</html>
