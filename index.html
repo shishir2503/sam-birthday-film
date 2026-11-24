@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100c10">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A birthday film for Samasmita.">
+  <title>For Samasmita ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="birthday.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <span>♡ <span class="masthead-name">FOR SAMASMITA</span></span>
+    <button class="sound" id="sound" type="button" aria-pressed="false">♪ Sound off</button>
+  </header>
+  <main id="film">
+    <section class="scene cover" aria-labelledby="cover-title">
+      <img class="cover-photo" src="film-cover.jpg" alt="" fetchpriority="high">
+      <div class="cover-copy">
+        <p class="eyebrow"><time datetime="2003-11-25">25 NOVEMBER 2003</time></p>
+        <h1 id="cover-title" tabindex="-1">Happy birthday,<br><em>Samasmita.</em></h1>
+        <p>Some moments with you feel like scenes from a film I could watch forever.</p>
+        <button class="action" data-next>Play our film <span aria-hidden="true">▶</span></button>
+      </div>
+    </section>
+    <section class="scene memory" hidden aria-labelledby="together-title">
+      <figure class="photo"><img src="film-together.jpg" alt="The two of us together outdoors"></figure>
+      <div class="memory-copy">
+        <p class="eyebrow">THE LITTLE MOMENTS</p>
+        <h2 id="together-title" tabindex="-1">My favorite kind<br>of <em>ordinary.</em></h2>
+        <p>A little time together, a quick photo, and a moment I’d happily stay in a little longer.</p>
+        <button class="action" data-next>Next memory</button>
+      </div>
+    </section>
+    <section class="scene memory" hidden aria-labelledby="adventure-title">
+      <figure class="photo"><img src="film-adventure.jpg" alt="The two of us in blue jerseys at the stadium"></figure>
+      <div class="memory-copy">
+        <p class="eyebrow">A DAY WORTH REPLAYING</p>
+        <h2 id="adventure-title" tabindex="-1">In a crowd,<br><em>I look for you.</em></h2>
+        <p>Matching jerseys, a stadium full of people, and still my favorite thing in the frame is your smile.</p>
+        <button class="action" data-next>Next memory</button>
+      </div>
+    </section>
+    <section class="scene memory" hidden aria-labelledby="samasmita-title">
+      <figure class="photo"><img src="film-samasmita.jpg" alt="Samasmita smiling in front of the cricket ground"></figure>
+      <div class="memory-copy">
+        <p class="eyebrow">MY FAVORITE FRAME</p>
+        <h2 id="samasmita-title" tabindex="-1">And then<br>there’s <em>you.</em></h2>
+        <p>If you ever wonder how I see you, this is close. A whole stadium lit up behind you, and somehow you’re still the first thing I notice.</p>
+        <button class="action" data-next>Make a birthday wish</button>
+      </div>
+    </section>
+    <section class="scene finale" hidden aria-labelledby="wish-title">
+      <div class="cake" aria-hidden="true"><div class="candles"><i></i><i></i><i></i></div><div class="icing">23</div><div class="plate"></div></div>
+      <p class="eyebrow"><time datetime="2026-11-25">25 NOVEMBER 2026</time></p>
+      <h2 id="wish-title" tabindex="-1">Make a <em>wish.</em></h2>
+      <p>One wish for you, and one more year of memories for us.</p>
+      <button class="action" id="wish">Blow out the candles</button>
+    </section>
+    <section class="scene finale ending" hidden aria-labelledby="letter-title">
+      <div class="letter">
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2 id="letter-title" tabindex="-1"><em>Dear Samasmita,</em></h2>
+        <p>If I could replay one thing, it would be how easy it feels to laugh with you. I hope 23 gives you plenty of reasons to laugh like that, places you can’t wait to go, and people who show up for you on the days you need them.</p>
+        <p>I’m glad I get to be there for some of it. Happy birthday, my love.</p>
+        <p class="signature">Always in your corner,<br>Shishir ♡</p>
+        <button class="action" id="replay">Replay our film</button>
+      </div>
+    </section>
+  </main>
+  <div class="shutter" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <footer class="film-nav" hidden>
+    <button id="back" type="button">Previous</button>
+    <div id="progress" role="group" aria-label="Film chapters"></div>
+    <span id="counter" aria-live="polite"></span>
+  </footer>
+</body>
+</html>
